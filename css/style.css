@@ -902,6 +902,12 @@ html._lock, body._lock {
   right: 0;
 }
 
+@media (max-width: 1200px) {
+  .swiper-pagination-unique {
+    bottom: -69px;
+  }
+}
+
 .swiper-pagination-bullet {
   display: inline-block;
   width: 40px;
@@ -930,6 +936,13 @@ html._lock, body._lock {
   min-width: 100px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .swiper-button-prev-unique,
+  .swiper-button-next-unique {
+    bottom: -36px;
+  }
 }
 
 .swiper-button-prev-unique {

@@ -861,6 +861,10 @@ html, body {
 	position: absolute;
 	bottom: -53px;
 	right: 0;
+
+	@media (max-width: 1200px) {
+		bottom: -69px;
+	}
 }
 
 .swiper-pagination-bullet {
@@ -891,6 +895,10 @@ html, body {
 	min-width: 100px;
 	cursor: pointer;
 	transition: 0.3s;
+
+	@media (max-width: 1200px) {
+		bottom: -36px;
+	}
 }
 
 .swiper-button-prev-unique {
