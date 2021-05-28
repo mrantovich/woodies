@@ -5,6 +5,10 @@
 html, body {
 	width: 100%;
 	font-family: $font-primary;
+
+	&._lock {
+		overflow: hidden;
+	}
 }
 
 .wrapper {
@@ -266,6 +270,7 @@ html, body {
 		color: rgba($text-color, 75%);
 		position: relative;
 		transition: 0.3s;
+		cursor: pointer;
 
 		&::after {
 			content: '';
@@ -288,6 +293,7 @@ html, body {
 		&_cur {
 			color: $accent-color;
 			font-weight: 800;
+			pointer-events: none;
 			&:hover {
 				&::after {
 					width: 0;

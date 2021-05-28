@@ -74,6 +74,10 @@ html, body {
   font-family: "Nunito", sans-serif;
 }
 
+html._lock, body._lock {
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
   overflow: hidden;
@@ -335,6 +339,7 @@ html, body {
   color: #222222;
   position: relative;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .navbar__link::after {
@@ -359,6 +364,7 @@ html, body {
 .navbar__link_cur {
   color: #DAA520;
   font-weight: 800;
+  pointer-events: none;
 }
 
 .navbar__link_cur:hover::after {
